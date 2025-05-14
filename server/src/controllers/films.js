@@ -14,7 +14,6 @@ export const useFilmController = (app, conn) => {
           WHERE 1=1`;
       
         const params = [];
-      
         if (actor) {
           query += " AND a.name = ?";
           params.push(actor);
